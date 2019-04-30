@@ -1,0 +1,175 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+#social {
+  padding-bottom: 50px;
+  float: right;
+
+}
+
+#social img {
+  width: 20px
+
+}
+
+
+.logo {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    /* width:10px;
+    height: auto; */
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+
+.navigation{
+    text-align: center;
+}
+
+.navigation a{
+    padding:20px 30px;
+    color:black;
+    text-decoration: none;
+
+
+/* .navigation {
+
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    margin-right: 20px;
+    margin-left: 20px; */
+
+}
+
+.navigation a:hover{
+    color:deepskyblue;
+    overflow: hidden;
+}
+
+
+.carosel img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carosel {
+  float: center;
+}
+
+
+.aboutme img {
+  width: 400px;
+  height: auto;
+}
+
+.aboutme {
+  padding-top: 150px;
+  align-items: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.textbox {
+  background-color: lightblue;
+  background-size: 360px 400px;
+  width: 360px;
+  height: 275px;
+  padding: 10px 46px 25px;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+  font-size: 12px;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+}
+
+.location2 {
+  width: 500px;
+  height: auto;
+}
+
+/* .location2 {
+  text-align: center;
+}
+
+.location3 {
+  float: right;
+} */
+
+
+
+
+.footer{
+
+  height: 150px;
+  width: auto;
+  padding-top: 20px;
+  background-color: #00AEEF;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.column2 {
+    float: center;
+    width:75%;
+}
+.column3 {
+    float: left;
+    padding: 10px;
+
+}
+
+.column3 img {
+  width: 250px;
+}
+
+/* <!-- ABOUT ME PAGE--> */
+
+.meetsarah img {
+  max-width: 100%;
+  height: auto;
+}
+
+.abouttext {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
+  float: center;
+}
+
+.flex-container2 {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+}
