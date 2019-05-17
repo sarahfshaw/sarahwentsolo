@@ -33,25 +33,45 @@ html{
   height: auto;
 }
 
-
+/*
 .navigation{
     text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+} */
+
+/* .navigation{
+    text-align: center;
+    display: inline-block;
+
 }
+
+.navigation ul {
+  list-style-type: none;
+  float: center;
+  display: inline-block;
+}
+
+.navigation li {
+  text-align: center;
+} */
+
 
 .navigation a{
     padding:20px 30px;
     color:black;
     text-decoration: none;
+  }
 
 
-/* .navigation {
-
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    display: inline;
-    margin-right: 20px;
-    margin-left: 20px; */
+.navigation {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  display: inline;
+  margin-right: 20px;
+  margin-left: 20px;
 
 }
 
@@ -124,15 +144,14 @@ h2 {
 } */
 
 
-
+/* <!-- FOOTER SECTION--> */
 
 .footer{
 
   height: 150px;
-  width: auto;
-  padding-top: 20px;
+  max-width: 100%;
+  padding: 10px;
   background-color: #00AEEF;
-  margin-bottom: 10px;
   margin-top: 15px;
 }
 
@@ -140,14 +159,34 @@ h2 {
     float: center;
     width:75%;
 }
-.column3 {
+.logofooter {
     float: left;
     padding: 10px;
 
 }
 
+#socialfooter {
+  float: right;
+
+}
+
+#socialfooter img {
+  width: 20px
+
+}
+
 .column3 img {
   width: 250px;
+}
+
+/* <!-- END OF OOTER SECTION--> */
+
+/* <!-- PAGE NAMES--> */
+
+.pagename {
+  font-size: 40px;
+  margin: 0px 0px;
+
 }
 
 /* <!-- ABOUT ME PAGE--> */
@@ -172,4 +211,72 @@ h2 {
   margin-left: 20px;
   margin-right: 20px;
   justify-content: center;
+}
+
+/* <!-- END OF ABOUT ME PAGE--> */
+
+/* <!-- start of blog Images section --> */
+
+.blog-image-container  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+
+}
+
+.blog-image-container img {
+  width: 250px;
+  height: auto;
+
+}
+
+.blog-image-title {
+  text-align: center;
+  width: 250px;
+}
+
+.blog-image-title a {
+  text-decoration-line: none;
+  color: black;
+}
+
+.blog-image-title a:hover{
+    color:deepskyblue;
+    overflow: hidden;
+}
+
+.blog-image-item {
+  margin: 40px;
+  text-align: center;
+}
+
+/* <!-- end of blog Images section --> */
+
+.blogpost-title {
+  font-size: 30px;
+  color: deepskyblue;
+  text-align: center;
+}
+
+.blogpost-pictures {
+ text-align: center;
+
+
+}
+
+.blogpost-pictures img{
+  width: 500px;
+  height: auto;
+
+
+}
+
+.blogpost-content {
+  margin: 0px 100px;
+  float: center;
+}
+
+.pinterest {
+  text-align: center;
 }
