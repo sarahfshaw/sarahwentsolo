@@ -8,9 +8,14 @@ html{
 
 }
 
+.logo-social {
+  display: flex;
+  justify-content: center;
+}
+
 #social {
-  padding-bottom: 50px;
-  float: right;
+  padding-bottom: 30px;
+  justify-content: flex-end;
 
 }
 
@@ -23,7 +28,7 @@ html{
 .logo {
     padding-top: 50px;
     padding-bottom: 20px;
-    text-align: center;
+    justify-content: center;
     /* width:10px;
     height: auto; */
 }
@@ -33,64 +38,101 @@ html{
   height: auto;
 }
 
-/*
-.navigation{
-    text-align: center;
-    display: inline-block;
-    text-decoration: none;
-    list-style-type: none;
-} */
 
-/* .navigation{
-    text-align: center;
-    display: inline-block;
-
-}
-
-.navigation ul {
-  list-style-type: none;
-  float: center;
-  display: inline-block;
-}
-
-.navigation li {
+.navigation {
   text-align: center;
-} */
-
+}
 
 .navigation a{
     padding:20px 30px;
     color:black;
     text-decoration: none;
-  }
-
-
-.navigation {
-  color: black;
-  text-decoration: none;
-  text-align: center;
-  display: inline;
-  margin-right: 20px;
-  margin-left: 20px;
-
 }
 
 .navigation a:hover{
-    color:deepskyblue;
-    overflow: hidden;
+  color:deepskyblue;
+  overflow: hidden;
 }
 
+.navigation ul ul.nested-list {
+  display: none;
+  position: absolute;
+}
 
-.carosel img {
+.navigation ul li:hover > ul.nested-list {
+		display: block;
+	}
+
+  .navigation ul.nested-list:after {
+  		content: "";
+      clear: both;
+      display: block;
+      color:red;
+  	}
+
+    li:hover ul.nested-list {
+        display: block;
+    }
+
+    li {
+      display: inline;
+      position: relative;
+    }
+
+
+    nav ul ul {
+
+      left: 0;
+      /* top: 300%; */
+      list-style: none;
+      background: white;
+      z-index: 99;
+      padding: 5px;
+      margin-bottom: 20px;
+      text-align: center;
+      /* width: 10px; */
+    }
+
+
+/* CAROSEL IMAGES  */
+/* .carosel img {
   max-width: 100%;
+  width: 100%
   height: auto;
+} */
+.container {
+  width: 100%;
+  max-width: 100%;
 }
 
-.carosel {
-  float: center;
+.carousel {
+	width: 100%;
+  max-width: 100%
+	/* margin: 0 auto; */
+}
+
+.carousel img {
+	max-width: 100%;
+  width: 100%;
+}
+
+img {
+	max-width: 100%;
+  width: 100%;
+}
+
+.slick-prev {
+  left: 10px;
+  z-index: 1;
+}
+.slick-next {
+  right: 10px;
+	z-index: 1;
 }
 
 
+
+/* MEET SARAH SECTION  */
 .aboutme img {
   width: 400px;
   height: auto;
@@ -146,40 +188,55 @@ h2 {
 
 /* <!-- FOOTER SECTION--> */
 
-.footer{
-
-  height: 150px;
+.footer {
+  /* height: 150px; */
   max-width: 100%;
   padding: 10px;
   background-color: #00AEEF;
   margin-top: 15px;
-}
-
-.column2 {
-    float: center;
-    width:75%;
-}
-.logofooter {
-    float: left;
-    padding: 10px;
+  display: flex;
 
 }
+
+.footertext {
+  margin-top: 40px;
+  justify-content: flex-start;
+}
+.footerlogo {
+  text-align: center;
+
+
+}
+
+.footerlogo img {
+  width: 250px;
+  height: auto;
+}
+
+
 
 #socialfooter {
-  float: right;
-
 }
 
 #socialfooter img {
   width: 20px
+}
+
+.subscribe {
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+  padding: 5px;
+  margin-top: 40px;
 
 }
 
-.column3 img {
-  width: 250px;
+.social-subscribe {
+
+  justify-content: flex-end;
 }
 
-/* <!-- END OF OOTER SECTION--> */
+/* <!-- END OF FOOTER SECTION--> */
 
 /* <!-- PAGE NAMES--> */
 
