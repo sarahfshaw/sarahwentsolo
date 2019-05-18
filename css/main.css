@@ -8,14 +8,18 @@ html{
 
 }
 
-.logo-social {
+/* LOGO AND SOCIAL INCON SECTION  */
+
+/* .logo-social {
   display: flex;
-  justify-content: center;
-}
+
+} */
 
 #social {
   padding-bottom: 30px;
+  display: flex;
   justify-content: flex-end;
+  margin: 10px;
 
 }
 
@@ -26,9 +30,11 @@ html{
 
 
 .logo {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 20px;
+    display: flex;
     justify-content: center;
+    align-items: center;
     /* width:10px;
     height: auto; */
 }
@@ -38,6 +44,7 @@ html{
   height: auto;
 }
 
+/* NAVIGATION SECTION  */
 
 .navigation {
   text-align: center;
@@ -94,7 +101,8 @@ html{
     }
 
 
-/* CAROSEL IMAGES  */
+/* CAROSEL IMAGES SECTION  */
+
 /* .carosel img {
   max-width: 100%;
   width: 100%
@@ -195,6 +203,7 @@ h2 {
   background-color: #00AEEF;
   margin-top: 15px;
   display: flex;
+  justify-content: space-between;
 
 }
 
@@ -203,7 +212,7 @@ h2 {
   justify-content: flex-start;
 }
 .footerlogo {
-  text-align: center;
+  justify-content: center;
 
 
 }
@@ -216,6 +225,10 @@ h2 {
 
 
 #socialfooter {
+  justify-content: center;
+  display: flex;
+  margin: 10px 10px;
+
 }
 
 #socialfooter img {
@@ -227,7 +240,7 @@ h2 {
   border-color: white;
   border-style: solid;
   padding: 5px;
-  margin-top: 40px;
+  margin-top: 20px;
 
 }
 
