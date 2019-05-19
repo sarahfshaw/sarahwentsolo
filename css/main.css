@@ -16,7 +16,7 @@ html{
 } */
 
 #social {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: flex-end;
   margin: 10px;
@@ -24,13 +24,14 @@ html{
 }
 
 #social img {
-  width: 20px
+  width: 20px;
+  margin: 2px;
 
 }
 
 
 .logo {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -99,7 +100,10 @@ html{
       text-align: center;
       /* width: 10px; */
     }
-
+    #mobile-menu-button {
+      color: #000;
+      display: none;
+    }
 
 /* CAROSEL IMAGES SECTION  */
 
@@ -173,7 +177,7 @@ h2 {
   padding-bottom: 30px;
 }
 
-.flex-container {
+.flex-mapcontainer {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -199,6 +203,7 @@ h2 {
 .footer {
   /* height: 150px; */
   max-width: 100%;
+  width: 100%
   padding: 10px;
   background-color: #00AEEF;
   margin-top: 15px;
@@ -227,12 +232,13 @@ h2 {
 #socialfooter {
   justify-content: center;
   display: flex;
-  margin: 10px 10px;
+  margin: 10px;
 
 }
 
 #socialfooter img {
-  width: 20px
+  width: 25px;
+  margin: 2px;
 }
 
 .subscribe {
@@ -241,6 +247,7 @@ h2 {
   border-style: solid;
   padding: 5px;
   margin-top: 20px;
+  max-width: 250px;
 
 }
 
@@ -274,7 +281,7 @@ h2 {
   float: center;
 }
 
-.flex-container2 {
+.flex-bucketlistcontainer {
   display: flex;
   align-items: center;
   padding: 20px;
@@ -349,4 +356,189 @@ h2 {
 
 .pinterest {
   text-align: center;
+}
+
+
+
+
+
+
+/* ----RESPONSIVE DESIGN---- */
+
+
+p {
+
+}
+
+.some-default-style {
+
+}
+
+/* Extra Large devices (large desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {
+  /* styles go here */
+}
+
+/*
+  Large devices (desktops, 992px and down)
+*/
+@media only screen and (max-width: 992px) {
+  /* styles go here */
+}
+
+/*
+  Medium devices (tablets, 768px and down)
+*/
+@media only screen and (max-width: 768px) {
+  /* styles go here */
+  .flex-mapcontainer {
+    display: flex;
+    flex-direction: column;
+    order: 3;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 4;
+  }
+  .footertext {
+    margin-top: 40px;
+    justify-content: center;
+  }
+  .footerlogo {
+    justify-content: center;
+
+
+  }
+
+  .footerlogo img {
+    width: 250px;
+    height: auto;
+  }
+
+
+
+  #socialfooter {
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+
+  }
+
+  #socialfooter img {
+    width: 25px;
+    margin: 2px;
+  }
+
+  .subscribe {
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    padding: 5px;
+    margin-top: 20px;
+    max-width: 250px;
+
+  }
+
+  .social-subscribe {
+
+    justify-content: flex-end;
+  }
+
+
+  .navigation {
+    padding: 0 8px;
+    flex-wrap: wrap;
+  }
+  /* .navigation ul {
+    flex-wrap: wrap;
+  } */
+
+  .navigation ul{
+    width: 48%;
+    margin-bottom: 10px;
+    text-align: right;
+  }
+
+  #mobile-menu-button {
+    display: block;
+    text-align: right;
+  }
+
+  /* .nav-container {
+    display: none;
+  } */
+
+  .nav-container {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nav-container.showing {
+  transition: all 500ms ease-in-out;
+  max-height: 500px;
+}
+
+.nav-container.hiding {
+  transition: all 500ms ease-in-out;
+  max-height: 0px;
+}
+
+
+.nav-container ul {
+  margin-left: 0px;
+  margin-bottom: 5px;
+}
+
+.navigation ul ul.nested-list {
+  display: block;
+}
+
+.navigation ul ul.nested-list {
+  display: none;
+  position: absolute;
+}
+
+.navigation ul li:hover > ul.nested-list {
+		display: block;
+	}
+
+  .navigation ul.nested-list:after {
+  		content: "";
+      clear: both;
+      display: block;
+      color:red;
+  	}
+
+    li:hover ul.nested-list {
+        display: block;
+    }
+
+    li {
+      display: inline;
+      position: relative;
+    }
+    nav ul ul {
+
+      left: 00;
+      /* top: 300%; */
+      list-style: none;
+      background: white;
+      z-index: 99;
+      padding: 5px;
+      margin-bottom: 20px;
+      text-align: left;
+      /* width: 10px; */
+
+
+}
+
+/*
+  Small devices (landscape phone, 576px and down)
+*/
+@media only screen and (max-width: 576px) {
+  /* styles go here */
 }

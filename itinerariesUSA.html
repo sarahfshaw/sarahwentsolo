@@ -11,18 +11,21 @@
     <meta name="keywords" content="HTML, CSS, blogpost">
     <meta name="author" content="sarah shaw: sarah went solo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    </head>
 
-   <link rel="stylesheet" type="text/css" href="css/main.css">
-   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  </head>
 
 
-
-
-  <body>
+    <body>
 
     <!-- HEADER WITH MY NAV and logo image-->
+    <div class="logo-social">
 
+    </div>
     <div id="social">
       <a href="https://www.instagram.com/sarahfshaw/?hl=en">
         <img src="images/insta1.png" alt="Instagram">
@@ -45,25 +48,42 @@
     <div class="logo">
       <img src="images/artboard1.png"alt="logo">
     </div>
+    </div>
 
     <div class="navigation">
-      <nav>
-        <a href="#">Home</a>
 
-        <a href="#">About Me</a>
+        <a href="#" id="mobile-menu-button">
+        <i class="fas fa-bars fa-lg"></i>
+        </a>
+      <nav class="nav-container hiding">
+        <ul>
+          <li><a href="file:///Users/sarahshaw/Desktop/FEUD%20FOLDER/github/sarahwentsolo/index.html">Home</a></li>
 
-        <a href="#">Travel</a>
+          <li><a href="file:///Users/sarahshaw/Desktop/FEUD%20FOLDER/github/sarahwentsolo/about.html">About Me</a></li>
 
-        <a href="#">Itineraries</a>
 
-        <a href="#">Photography</a>
 
-        <a href="#">Tips & Tricks</a>
+          <li><a href="#">Travel</a>
+            <ul class="nested-list">
+              <li><a href="file:///Users/sarahshaw/Desktop/FEUD%20FOLDER/github/sarahwentsolo/travelUSA.html">USA</a></li>
+              <li><a href="file:///Users/sarahshaw/Desktop/FEUD%20FOLDER/github/sarahwentsolo/travelEUROPE.html">Europe</a></li>
 
-        <a href="#">Gear</a>
+            </ul></li>
 
+
+          <li><a href="#">Itineraries</a>
+            <ul class="nested-list">
+              <li><a href="file:///Users/sarahshaw/Desktop/FEUD%20FOLDER/github/sarahwentsolo/itinerariesUSA.html">USA</a></li>
+              <li><a href="file:///Users/sarahshaw/Desktop/FEUD%20FOLDER/github/sarahwentsolo/itinerariesEUROPE.html">Europe</a></li>
+            </ul></li>
+
+          <li><a href="file:///Users/sarahshaw/Desktop/FEUD%20FOLDER/github/sarahwentsolo/tipsandtricks.html">Tips & Tricks</a></li>
+
+          <li><a href="file:///Users/sarahshaw/Desktop/FEUD%20FOLDER/github/sarahwentsolo/gear.html">Gear</a></li>
+        </ul>
       </nav>
     </div>
+
     <hr>
 <!-- END OF HEADER AND NAVIGATION PANE-->
     <div class="blog-image-container">
@@ -151,6 +171,9 @@
 
 
 
+  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
 
   </body>
  </html>
