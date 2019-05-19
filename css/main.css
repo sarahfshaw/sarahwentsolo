@@ -82,10 +82,10 @@ html{
         display: block;
     }
 
-    li {
+    /* li {
       display: inline;
       position: relative;
-    }
+    } */
 
 
     nav ul ul {
@@ -261,7 +261,7 @@ h2 {
 /* <!-- PAGE NAMES--> */
 
 .pagename {
-  font-size: 40px;
+  font-size: 17px;
   margin: 0px 0px;
 
 }
@@ -324,7 +324,7 @@ h2 {
 }
 
 .blog-image-item {
-  margin: 40px;
+  margin: 20px;
   text-align: center;
 }
 
@@ -394,7 +394,7 @@ p {
   .flex-mapcontainer {
     display: flex;
     flex-direction: column;
-    order: 3;
+    order: 4;
   }
 
   .footer {
