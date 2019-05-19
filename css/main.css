@@ -82,10 +82,10 @@ html{
         display: block;
     }
 
-    /* li {
+    li {
       display: inline;
       position: relative;
-    } */
+    }
 
 
     nav ul ul {
@@ -145,14 +145,66 @@ img {
 
 
 /* MEET SARAH SECTION  */
-.aboutme img {
+.aboutmeimages img {
   width: 400px;
   height: auto;
 }
 
-.aboutme {
+.aboutmeimages {
   padding-top: 150px;
-  align-items: center;
+  position: relative;
+  display: block;
+  width: 100%;
+  justify-content: center;
+}
+
+.francepic {
+  z-index: 3;
+  top: 60px;
+  left: 180px;
+  position: absolute;
+}
+
+.francepic img {
+  width: 400px;
+  height: auto;
+}
+
+.canyonpic {
+  z-index: 2;
+  top: 60px;
+  left: 680px;
+  position: absolute;
+
+}
+
+.canyonpic img {
+  width: 400px;
+  height: auto;
+}
+
+.swisspic {
+  z-index: 3;
+  top: 290px;
+  left: 150px;
+  position: absolute;
+}
+
+.swisspic img {
+  width: 420px;
+  height: auto;
+}
+
+.camerapic {
+  z-index: 7;
+  top: 290px;
+  left: 660px;
+  position: absolute;
+}
+
+.camerapic img {
+  width: 400px;
+  height: auto;
 }
 
 h3 {
@@ -160,16 +212,38 @@ h3 {
 }
 
 .textbox {
-  background-color: lightblue;
-  background-size: 360px 400px;
-  width: 360px;
-  height: 275px;
+  background-color: #fff;
+  border: 1px deepskyblue;
+  border-style: solid;
+  width: 260px;
+  height: 310px;
   padding: 10px 46px 25px;
   bottom: 0;
   right: 0;
-  z-index: 9;
+  z-index: 10;
   font-size: 12px;
+  top: 0px;
+  bottom: 50px;
+  left: 480px;
+  position: relative;
 }
+
+.readmore a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.readmore {
+  text-align: center;
+  border: 1px deepskyblue;
+  border-style: solid;
+  margin-bottom: 3px;
+}
+
+
+
+/* ----MAP SECTION---- */
 
 h2 {
   text-align: center;
@@ -249,11 +323,14 @@ h2 {
   margin-top: 20px;
   max-width: 250px;
 
+
 }
 
 .social-subscribe {
 
   justify-content: flex-end;
+  margin-left: 10px;
+  padding-left: 10px;
 }
 
 /* <!-- END OF FOOTER SECTION--> */
@@ -358,7 +435,11 @@ h2 {
   text-align: center;
 }
 
+/* --AMAZON LINKS--  */
 
+.amazon img{
+  max-width: 100px;
+}
 
 
 
@@ -384,6 +465,7 @@ p {
 */
 @media only screen and (max-width: 992px) {
   /* styles go here */
+
 }
 
 /*
@@ -452,9 +534,9 @@ p {
     padding: 0 8px;
     flex-wrap: wrap;
   }
-  /* .navigation ul {
+  .navigation ul {
     flex-wrap: wrap;
-  } */
+  }
 
   .navigation ul{
     width: 48%;
