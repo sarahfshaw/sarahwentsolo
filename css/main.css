@@ -297,7 +297,7 @@ h2 {
 }
 
 .footerlogo img {
-  width: 250px;
+  width: 200px;
   height: auto;
 }
 
@@ -473,11 +473,18 @@ p {
 */
 @media only screen and (max-width: 768px) {
   /* styles go here */
+
+  /* -----MAP SECTION----- */
   .flex-mapcontainer {
     display: flex;
     flex-direction: column;
+  }
+
+  .location2 {
     order: 4;
   }
+
+  /* -------FOOTER SECTION------- */
 
   .footer {
     display: flex;
@@ -487,16 +494,18 @@ p {
   }
   .footertext {
     margin-top: 40px;
-    justify-content: center;
+    text-align: center;
+    order: 4;
   }
   .footerlogo {
     justify-content: center;
+    text-align: center;
 
 
   }
 
   .footerlogo img {
-    width: 250px;
+    width: 150px;
     height: auto;
   }
 
@@ -521,27 +530,33 @@ p {
     padding: 5px;
     margin-top: 20px;
     max-width: 250px;
+    text-align: center;
+
 
   }
 
   .social-subscribe {
+    justify-content: center;
 
-    justify-content: flex-end;
   }
 
-
+/* ------NAVIGATION SECTION------- */
   .navigation {
     padding: 0 8px;
     flex-wrap: wrap;
+
   }
   .navigation ul {
     flex-wrap: wrap;
+
+
   }
 
   .navigation ul{
     width: 48%;
     margin-bottom: 10px;
     text-align: right;
+    justify-content: flex-end;
   }
 
   #mobile-menu-button {
@@ -557,11 +572,15 @@ p {
   display: block;
   width: 100%;
   overflow: hidden;
+  text-align: right;
+
+
 }
 
 .nav-container.showing {
   transition: all 500ms ease-in-out;
   max-height: 500px;
+  justify-content: flex-end;
 }
 
 .nav-container.hiding {
@@ -573,15 +592,18 @@ p {
 .nav-container ul {
   margin-left: 0px;
   margin-bottom: 5px;
+
 }
 
 .navigation ul ul.nested-list {
   display: block;
+
 }
 
 .navigation ul ul.nested-list {
   display: none;
-  position: absolute;
+  position: relative;
+
 }
 
 .navigation ul li:hover > ul.nested-list {
@@ -592,7 +614,7 @@ p {
   		content: "";
       clear: both;
       display: block;
-      color:red;
+      color: white;
   	}
 
     li:hover ul.nested-list {
@@ -600,8 +622,9 @@ p {
     }
 
     li {
-      display: inline;
+      display: inline-block;
       position: relative;
+
     }
     nav ul ul {
 
@@ -613,6 +636,7 @@ p {
       padding: 5px;
       margin-bottom: 20px;
       text-align: left;
+      
       /* width: 10px; */
 
 
