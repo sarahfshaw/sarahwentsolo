@@ -25,7 +25,7 @@ html{
 
 #social img {
   width: 20px;
-  margin: 2px;
+  margin: 3px;
 
 }
 
@@ -287,8 +287,10 @@ h2 {
 }
 
 .footertext {
-  margin-top: 40px;
+  margin-top: 50px;
+
   justify-content: flex-start;
+  font-size: 12px;
 }
 .footerlogo {
   justify-content: center;
@@ -301,7 +303,11 @@ h2 {
   height: auto;
 }
 
+#social img {
+  width: 15px;
+  margin: 3px;
 
+}
 
 #socialfooter {
   justify-content: center;
@@ -311,8 +317,8 @@ h2 {
 }
 
 #socialfooter img {
-  width: 25px;
-  margin: 2px;
+  width: 15px;
+  margin: 3px;
 }
 
 .subscribe {
@@ -321,13 +327,27 @@ h2 {
   border-style: solid;
   padding: 5px;
   margin-top: 20px;
-  max-width: 250px;
+  max-width: 300px;
 
 
 }
 
-.social-subscribe {
+.subscribe-text {
+  text-align: center;
+  font-size: 17px;
+}
 
+.mc-field-group {
+  font-size: 14px;
+  display: flex;
+}
+
+
+.clear {
+  text-align: center;
+}
+
+.social-subscribe {
   justify-content: flex-end;
   margin-left: 10px;
   padding-left: 10px;
@@ -338,7 +358,7 @@ h2 {
 /* <!-- PAGE NAMES--> */
 
 .pagename {
-  font-size: 17px;
+  font-size: 12px;
   margin: 0px 0px;
 
 }
@@ -365,6 +385,11 @@ h2 {
   margin-left: 20px;
   margin-right: 20px;
   justify-content: center;
+}
+
+.flex-bucketlistcontainer li {
+  display: list-item;
+  margin-bottom: 10px;
 }
 
 /* <!-- END OF ABOUT ME PAGE--> */
@@ -431,6 +456,12 @@ h2 {
   float: center;
 }
 
+.blogpost-content li{
+  display: list-item;
+  margin-bottom: 10px;
+}
+
+
 .pinterest {
   text-align: center;
 }
@@ -478,11 +509,14 @@ p {
   .flex-mapcontainer {
     display: flex;
     flex-direction: column;
+
   }
 
-  .location2 {
-    order: 4;
+  .map-text2 {
+    order: 3;
   }
+
+
 
   /* -------FOOTER SECTION------- */
 
@@ -528,15 +562,14 @@ p {
     border-color: white;
     border-style: solid;
     padding: 5px;
-    margin-top: 20px;
     max-width: 250px;
-    text-align: center;
+    justify-content: center;
 
 
   }
 
   .social-subscribe {
-    justify-content: center;
+    text-align: center;
 
   }
 
@@ -636,7 +669,7 @@ p {
       padding: 5px;
       margin-bottom: 20px;
       text-align: left;
-      
+
       /* width: 10px; */
 
 
